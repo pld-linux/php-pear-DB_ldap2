@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - DB drivers for LDAP v2 and v3 database
 Summary(pl):	%{_pearname} - sterowniki DB do bazy danych LDAP v2 i v3
 Name:		php-pear-%{_pearname}
-Version:	0.3
+Version:	0.4
 Release:	1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	06031ce267e98c8769bfba98cb565ca5
+# Source0-md5:	33e89636936d7b9151e30811a24c04ca
 URL:		http://pear.php.net/package/%{_pearname}/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear

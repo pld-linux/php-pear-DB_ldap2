@@ -25,7 +25,7 @@ access to LDAP servers with protocol version 2 and 3. The drivers
 provide common DB interface as much as possible and support
 prepare/execute statements.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasy DB_ldap2 i DB_ldap3 rozszerzaj± DB_common, aby umo¿liwiæ zgodny

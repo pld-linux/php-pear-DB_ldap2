@@ -1,8 +1,9 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          DB
-%define         _subclass       ldap2
-%define		_pearname	%{_class}_%{_subclass}
+%define		_class		DB
+%define		_subclass	ldap2
 %define		_status		beta
+%define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - DB drivers for LDAP v2 and v3 database
 Summary(pl):	%{_pearname} - sterowniki DB do bazy danych LDAP v2 i v3
 Name:		php-pear-%{_pearname}

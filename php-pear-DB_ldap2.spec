@@ -1,11 +1,10 @@
-# ToDo:
-# - pl summary/description
 %include	/usr/lib/rpm/macros.php
 %define         _class          DB
 %define         _subclass       ldap2
 %define		_pearname	%{_class}_%{_subclass}
 %define		_status		devel
-Summary:	%{_pearname} - DB drivers for LDAP v2 and v2 databse
+Summary:	%{_pearname} - DB drivers for LDAP v2 and v3 database
+Summary(pl):	%{_pearname} - sterowniki DB do bazy danych LDAP v2 i v3
 Name:		php-pear-%{_pearname}
 Version:	0.2
 Release:	1
@@ -25,12 +24,18 @@ access to LDAP servers with protocol version 2 and 3. The drivers
 provide common DB interface as much as possible and support
 prepare/execute statements.
 
+%description -l pl
+Klasy DB_ldap2 i DB_ldap3 rozszerzaj± DB_common, aby umo¿liwiæ zgodny
+z DB dostêp do serwerów LDAP przy u¿yciu protoko³u w wersji 2 i 3.
+Sterowniki dostarczaj± najbardziej ogólny jak to mo¿liwe interfejs DB
+oraz obs³uguj± instrukcje prepare/execute.
+
 %prep
 %setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 

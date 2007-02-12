@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - DB drivers for LDAP v2 and v3 database
-Summary(pl):	%{_pearname} - sterowniki DB do bazy danych LDAP v2 i v3
+Summary(pl.UTF-8):   %{_pearname} - sterowniki DB do bazy danych LDAP v2 i v3
 Name:		php-pear-%{_pearname}
 Version:	0.4
 Release:	4
@@ -31,17 +31,17 @@ prepare/execute statements.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasy DB_ldap2 i DB_ldap3 rozszerzaj± DB_common, aby umo¿liwiæ zgodny
-z DB dostêp do serwerów LDAP przy u¿yciu protoko³u w wersji 2 i 3.
-Sterowniki dostarczaj± najbardziej ogólny jak to mo¿liwe interfejs DB
-oraz obs³uguj± instrukcje prepare/execute.
+%description -l pl.UTF-8
+Klasy DB_ldap2 i DB_ldap3 rozszerzajÄ… DB_common, aby umoÅ¼liwiÄ‡ zgodny
+z DB dostÄ™p do serwerÃ³w LDAP przy uÅ¼yciu protokoÅ‚u w wersji 2 i 3.
+Sterowniki dostarczajÄ… najbardziej ogÃ³lny jak to moÅ¼liwe interfejs DB
+oraz obsÅ‚ugujÄ… instrukcje prepare/execute.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -50,7 +50,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep

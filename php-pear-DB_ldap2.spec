@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - DB drivers for LDAP v2 and v3 database
-Summary(pl.UTF-8):   %{_pearname} - sterowniki DB do bazy danych LDAP v2 i v3
+Summary(pl.UTF-8):	%{_pearname} - sterowniki DB do bazy danych LDAP v2 i v3
 Name:		php-pear-%{_pearname}
 Version:	0.4
 Release:	4
@@ -41,7 +41,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no

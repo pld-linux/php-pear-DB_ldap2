@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		beta
 %define		_pearname	DB_ldap2
 Summary:	%{_pearname} - DB drivers for LDAP v2 and v3 database
